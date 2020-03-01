@@ -28,7 +28,6 @@
 </head>
 <body data-spy="scroll" data-target="#mainnavbar" data-offset="0" id="top">
   <nav id="mainnavbar" class="navbar navbar-expand navbar-dark bg-dark sticky-top">
-    <!--<a class="navbar-brand" href="#">Boda Rosa y Beppe</a>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,6 +56,7 @@
                 <address>
                   Calle Caracolas, 37, 11207 Algeciras, Cádiz
                 </address>
+                <a class="btn btn-outline-primary" href="https://goo.gl/maps/Lvfew2WjRUsdtLpw8" target="_blank"> <i class="fas fa-car"></i> Indicaciones</a>
               </div>
             </div>
           </div>
@@ -95,7 +95,9 @@
                   </div>
                 </div>
                 <p></p>
-                <div data-netlify-recaptcha="true"></div>
+                <div class="col-8">
+                  <div class="netlify-recaptcha" data-netlify-recaptcha="true"></div>
+                </div>
                 <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Atenderé</button>
                 <button type="submit" id="form-submit-not" class="btn btn-dark btn-lg pull-right">No podré atender</button>
               </form>
