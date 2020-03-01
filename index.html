@@ -1,0 +1,119 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="es"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Boda Rosa y Beppe</title>
+  <meta name="description" content="Boda Rosa y Beppe">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/override.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-30913414-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-30913414-3');
+</script>
+</head>
+<body data-spy="scroll" data-target="#mainnavbar" data-offset="0" id="top">
+  <nav id="mainnavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <!--<a class="navbar-brand" href="#">Boda Rosa y Beppe</a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#location">Location</a>
+      <a class="nav-item nav-link" href="#rsvp">RSVP</a>
+    </div>
+  </div>
+  </nav>
+  <main>
+    <section class="mainsection" id="location">
+      <div class="container-fluid h-100">
+        <div class="wrapper">
+          <div id="evento-img">
+            <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.860426795654!2d-5.436418080466116!3d36.0730155258631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c95ca4b03741b%3A0xdeca643e250b78fe!2sRestaurante%20PURO%20ESTRECHO!5e1!3m2!1sen!2ses!4v1583072687984!5m2!1sen!2ses" frameborder="0" style="border:0;"></iframe>
+          </div>
+          <div class="card map-card">
+            <div class="card-body">
+              <h3 class="card-title">Boda Rosa y Beppe</h3>
+              <div class="card-text">
+                <p>Nos esperamos el</p>
+                <p>Sabado 27 Junio 2020</p>
+                <h3>Restaurante Puro Estrecho</h3>
+                <p></p>
+                <address>
+                  Calle Caracolas, 37, 11207 Algeciras, Cádiz
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mainsection" id="rsvp">
+      <div class="container-fluid">
+        <div class="wrapper">
+          <div id="rsvp-img"></div>
+          <div class="card map-card rsvp-card">
+            <div class="card-body">
+              <h3 class="card-title">R.S.V.P.</h3>
+              <p class="card-subtitle">Répondez s'il vous plaît</p>
+
+              <form role="form" class="" id="rsvpForm">
+
+                <div class="form-group form-row pt-3">
+                  <div class="col-12 mt-3 mb-3">
+                    <input class="form-control mb-0" type="text" id="nome" name="name" placeholder="Nombre y Apellidos" required="">
+                    <div class="invalid-tooltip">
+                      Necesitamos saber quien sois.
+                    </div>
+                  </div>
+                  <div class="col-6 mt-3 mb-3">
+                    <input class="form-control mb-0" type="number" min="1" id="guests" name="guests" placeholder="Cuantos sois (adultos)" required="">
+                    <div class="invalid-tooltip">
+                      Necesitamos saber cuantos sois.
+                    </div>
+                  </div>
+                  <div class="col-6 mt-3 mb-3">
+                    <input class="form-control mb-0" type="number" min="0" id="smallchildren" name="smallchildren" placeholder="Cuantos sois (niños 4-10 años)">
+                  </div>
+                  <div class="col-12 mt-3 mb-3">
+                    <textarea class="form-control mb-0" aria-label="note" id="note" placeholder="Otra informaciones que podemos necesitar, comida vegana, etc..."></textarea>
+                  </div>
+                </div>
+                <p></p>
+
+                <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Atenderé</button>
+                <button type="submit" id="form-submit-not" class="btn btn-dark btn-lg pull-right">No podré atender</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="text-center content">
+      <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
+      <p>Made by Beppe with lots of <span class="fa fa-heart pulse2"></span> for Rosa</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
