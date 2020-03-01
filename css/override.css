@@ -1,5 +1,6 @@
 body {
   position: relative;
+  background-color: aliceblue;
 }
 section.mainsection {
     padding-top: 60px;
@@ -9,6 +10,7 @@ section.mainsection {
 section {
   min-height: 100vh;
   position: relative;
+  padding: 0px;
 }
 /*------------*/
 .wrapper {
@@ -28,12 +30,24 @@ section {
     content: ""
 }
 
+@media only screen and (max-width: 992px) {
+    #evento-img {
+        height:50vh
+    }
+}
 
 #map {
     width: 140vw;
     height: 100vh;
     position: relative;
     display: block
+}
+
+@media only screen and (max-width: 992px) {
+    #map {
+        width:100%;
+        height: 50vh
+    }
 }
 
 .map-card {
@@ -44,6 +58,46 @@ section {
     height: 55vh;
     font-size: 1.5rem;
     box-shadow: 0 0.1px 6.7px rgba(0,0,0,0.026),0 0.3px 13px rgba(0,0,0,0.037),0 0.7px 20.1px rgba(0,0,0,0.046),0 1.4px 28.8px rgba(0,0,0,0.054),0 2.6px 40.5px rgba(0,0,0,0.063),0 4.8px 58px rgba(0,0,0,0.074),0 10px 98px rgba(0,0,0,0.1)
+}
+
+
+@media all and (orientation: portrait) {
+    .map-card {
+        left:7.5vw;
+        bottom: 5vw;
+        width: 75vw;
+        height: 75vw
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .map-card {
+        position:relative;
+        width: calc(100% - $double-sidebar);
+        height: auto;
+        left: 6vw;
+        top: -6vw;
+        bottom: auto
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .map-card {
+        width:calc(100% - 4rem);
+        margin: 0 auto;
+        height: auto;
+        left: auto;
+        top: -2rem
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .map-card {
+        position:static;
+        width: 100%;
+        height: auto;
+        margin: auto
+    }
 }
 
 .map-card .card-body {
@@ -75,6 +129,12 @@ section {
 }
 #rsvp form {
   width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    #rsvp-img {
+        height:50vh
+    }
 }
 /*------------*/
 .pulse2 {

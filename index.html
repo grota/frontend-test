@@ -27,7 +27,7 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#mainnavbar" data-offset="0" id="top">
-  <nav id="mainnavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav id="mainnavbar" class="navbar navbar-expand navbar-dark bg-dark sticky-top">
     <!--<a class="navbar-brand" href="#">Boda Rosa y Beppe</a>-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
             <div class="card-body">
               <h3 class="card-title">Boda Rosa y Beppe</h3>
               <div class="card-text">
-                <p>Nos esperamos el</p>
+                <p>Os esperamos el</p>
                 <p>Sabado 27 Junio 2020</p>
                 <h3>Restaurante Puro Estrecho</h3>
                 <p></p>
@@ -72,7 +72,7 @@
               <h3 class="card-title">R.S.V.P.</h3>
               <p class="card-subtitle">Répondez s'il vous plaît</p>
 
-              <form role="form" class="" id="rsvpForm" netlify>
+              <form role="form" class="" id="rsvpForm" netlify data-netlify-recaptcha="true">
 
                 <div class="form-group form-row pt-3">
                   <div class="col-12 mt-3 mb-3">
@@ -95,7 +95,7 @@
                   </div>
                 </div>
                 <p></p>
-
+                <div data-netlify-recaptcha="true"></div>
                 <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right">Atenderé</button>
                 <button type="submit" id="form-submit-not" class="btn btn-dark btn-lg pull-right">No podré atender</button>
               </form>
